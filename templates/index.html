@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <h2 style="text-align: center; margin-bottom:40px">{% block title %} Calculate similarity of two sentences {% endblock %}</h2>
+
+    <form method="POST" id="main">
+        <label for="basic-url">Your first sentence</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <!--span class="input-group-text" id="basic-addon3">https://example.com/users/</span!-->
+          </div>
+          <input  type="text" class="form-control" id="sent1" aria-describedby="basic-addon3">
+        </div>
+    
+        <label for="basic-url">Your second sentence</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <!--span class="input-group-text" id="basic-addon3">https://example.com/users/</span!-->
+          </div>
+          <input  type="text" class="form-control" id="sent2" aria-describedby="basic-addon3">
+        </div>
+    
+        <button class="btn btn-primary" id="submit">Submit</button>
+
+    </form>
+    <hr style="margin-top: 50px;">
+    <p>Cosine similarity score between two sentence is: <span id = "result"></span> </p> 
+{% endblock %}
+
