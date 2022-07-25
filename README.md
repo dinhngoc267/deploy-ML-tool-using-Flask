@@ -10,4 +10,4 @@ This is a mini project to practice deploying machine learning model.
 
 ## Model
 
-I use pre-trained distil Roberta to encode sentence into vector then use cosine similarity to compute similarity score
+I use pre-trained distil Roberta to encode two sentences into vectors then use cosine similarity to compute similarity score
